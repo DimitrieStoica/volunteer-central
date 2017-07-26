@@ -5,7 +5,7 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "add")
-public class Add {
+public class Ad {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,10 +14,10 @@ public class Add {
     @NotNull
     private String goal;
 
-    public Add() {
+    public Ad() {
     }
 
-    public Add(String id, String goal) {
+    public Ad(String id, String goal) {
         this.id = id;
         this.goal = goal;
     }
